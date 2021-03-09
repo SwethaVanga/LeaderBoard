@@ -1,0 +1,25 @@
+@import "../../assets/style/variables.scss";
+
+.container {
+  max-width: 984px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.title {
+  margin-bottom: 53px;
+  text-align: center;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 32px;
+  color: $title;
+
+  & span {
+    color: $oval;
+  }
+}
+.inner {
+  margin: 116px 0;
+}

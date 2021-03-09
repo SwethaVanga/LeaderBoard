@@ -1,0 +1,105 @@
+@import "../../../assets/style/variables.scss";
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 38px;
+  margin-bottom: 29px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    height: 34px;
+  }
+
+  &__index {
+    width: 40px;
+    margin-right: 23px;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 21px;
+    color: $index;
+  }
+
+  &__image {
+    width: 38px;
+    height: 38px;
+    margin-right: 42px;
+    & img {
+      border-radius: 10px;
+    }
+  }
+
+  &__score {
+    width: 40px;
+    margin-right: 37px;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 21px;
+    color: $table-score;
+  }
+
+  &__name {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: $title;
+  }
+
+  &__edit {
+    margin-left: 34px;
+    cursor: pointer;
+  }
+
+  &__change {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+
+    & svg {
+      padding-right: 12px;
+    }
+  }
+}
+.change {
+  &__zero {
+    color: $oval;
+
+    & path {
+      fill: $oval;
+    }
+  }
+
+  &__up {
+    color: $score;
+
+    & svg {
+      transform: rotate(-90deg);
+    }
+    & path {
+      fill: $score;
+    }
+  }
+
+  &__down {
+    color: $red;
+
+    & svg {
+      transform: rotate(90deg);
+    }
+    & path {
+      fill: $red;
+    }
+  }
+}

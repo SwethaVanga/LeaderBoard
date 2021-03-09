@@ -1,0 +1,27 @@
+@import "../../assets/style/variables.scss";
+.table {
+  width: 100%;
+  padding: 25px;
+  background-color: $white;
+  border: 1px solid $header-border;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: $title;
+  }
+
+  &__inner{
+    margin-top: 25px;
+  }
+}

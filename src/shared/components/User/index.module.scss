@@ -1,0 +1,54 @@
+@import "../../../assets/style/variables.scss";
+
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 84px;
+  margin-right: 24px;
+
+  &__avatar {
+    position: relative;
+    height: 84px;
+    width: inherit;
+  }
+
+  &__score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 27px;
+    border-radius: 5px;
+    position: absolute;
+    top: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    //font
+    font-family: "Gilroy";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: $score;
+    background-color: $white;
+  }
+
+  &__image {
+    & img {
+      width: 84px;
+      height: 84px;
+      border-radius: 6px;
+    }
+  }
+
+  &__name {
+    font-size: 12px;
+    line-height: 32px;
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+    color: $white;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}

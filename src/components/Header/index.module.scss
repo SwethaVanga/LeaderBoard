@@ -1,0 +1,127 @@
+@import "../../assets/style/variables.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 187px;
+  padding: 16px 27px;
+  margin-bottom: 27px;
+  border-radius: 10px;
+  border: 1px solid $header-border;
+  background-color: $header;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+
+  &_title {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: $white;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    width: 498px;
+    padding: 0;
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    top: 7px;
+  }
+}
+
+.image {
+  & svg {
+    width: 390px;
+    height: 248px;
+
+    & path:nth-child(1) {
+      fill: transparent;
+    }
+    & circle:nth-child(2) {
+      fill: transparent;
+    }
+    & path:nth-child(3) {
+      fill: transparent;
+    }
+    & path:nth-child(4) {
+      fill: transparent;
+    }
+    & path:nth-child(5) {
+      fill: $header-border;
+    }
+    & path:nth-child(6) {
+      fill: $line;
+    }
+    & path:nth-child(7) {
+      fill: $line;
+    }
+    & path:nth-child(9) {
+      fill: transparent;
+    }
+    & path:nth-child(8) {
+      fill: $oval;
+    }
+    & path:nth-child(10) {
+      fill: transparent;
+    }
+    & path:nth-child(11) {
+      fill: transparent;
+    }
+    & path:nth-child(12) {
+      fill: transparent;
+    }
+    & path:nth-child(13) {
+      fill: $header-border;
+    }
+    & circle:nth-child(14) {
+      fill: $header-border;
+    }
+    & circle:nth-child(15) {
+      fill: $header-border;
+    }
+    & path:nth-child(16) {
+      fill: $header-border;
+    }
+    & path:nth-child(17) {
+      fill: $header-border;
+    }
+    & path:nth-child(18) {
+      fill: $line;
+    }
+    & path:nth-child(19) {
+      fill: $line;
+    }
+    & path:nth-child(20) {
+      fill: $line;
+    }
+    & path:nth-child(21) {
+      fill: $line;
+    }
+    & path:nth-child(22) {
+      fill: $header-border;
+    }
+    & path:nth-child(23) {
+      fill: $oval;
+    }
+    & path:nth-child(24) {
+      fill: $header-border;
+    }
+    & path:nth-child(33) {
+      fill: $oval;
+    }
+    & path:nth-child(35) {
+      fill: $oval;
+    }
+    & circle:nth-child(17) {
+      fill: $oval;
+    }
+  }
+}

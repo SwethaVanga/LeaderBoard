@@ -1,0 +1,63 @@
+@import "../../../assets/style/variables.scss";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+
+  &__title {
+    margin-bottom: 30px;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 32px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & input[type="text"] {
+      width: 350px;
+      height: 50px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid $header;
+      outline: none;
+      box-sizing: border-box;
+      font-weight: 500;
+
+      &::placeholder {
+        text-transform: capitalize;
+      }
+    }
+
+    & button {
+      width: 200px;
+      height: 50px;
+      margin-top: 20px;
+      border: 1px solid $black;
+      border-radius: 5px;
+      background-color: $white;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: bold;
+
+      &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      &:active {
+        outline: none;
+        border: none;
+      }
+
+      &:disabled{
+        cursor: auto;
+      }
+    }
+  }
+}
