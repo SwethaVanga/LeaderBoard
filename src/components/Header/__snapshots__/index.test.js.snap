@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render correctly header component 1`] = `
+<div
+  className="header"
+>
+  <div
+    className="header__rating"
+  >
+    <span
+      className="header_title"
+    >
+      All time Highest Scorers
+    </span>
+    <ul
+      className="header__list"
+    >
+      <div
+        className="user"
+      >
+        <div
+          className="user__avatar"
+        >
+          <div
+            className="user__image"
+          >
+            <img
+              alt=""
+              src="chris.svg"
+            />
+          </div>
+          <div
+            className="user__score"
+          >
+            0
+          </div>
+        </div>
+        <div
+          className="user__name"
+        >
+          
+        </div>
+      </div>
+    </ul>
+  </div>
+  <div
+    className="header__image"
+  >
+    <div
+      className="image"
+    />
+  </div>
+</div>
+`;

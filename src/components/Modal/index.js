@@ -1,6 +1,5 @@
 import React from 'react'
 import style from './index.module.scss'
-import PropTypes from 'prop-types'
 import Form from '../../shared/components/Form'
 
 const Modal = ({ setClose, id }) => {
@@ -11,7 +10,6 @@ const Modal = ({ setClose, id }) => {
           className={style.modal__close}
           onClick={() => {
             setClose(false)
-            console.log('click')
           }}
         >
           X
@@ -20,11 +18,6 @@ const Modal = ({ setClose, id }) => {
       </div>
     </div>
   )
-}
-
-Modal.propTypes = {
-  setClose: PropTypes.func.isRequired,
-  id: PropTypes.number,
 }
 
 export default Modal

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render correctly App component 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="inner"
+  >
+    <div
+      className="title"
+    >
+      Cube
+      <span>
+        19
+      </span>
+       Leaderboard
+    </div>
+  </div>
+</div>
+`;

@@ -87,17 +87,22 @@ export const updatePlayer = (id, player) => async (dispatch) => {
 
 /**
  * create action to hide create modal
+ * @returns action
  */
 export const hideModalAction = () => ({
   type: MODAL_DISPLAYED,
   payload: false,
 })
 
-
+/**
+ * create action to show create modal
+ * @returns action
+ */
 export const showModalAction = () => ({
   type: MODAL_DISPLAYED,
   payload: true,
 })
+
 
 export const showModal = () => async (dispatch) => {
   dispatch(showModalAction())

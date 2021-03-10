@@ -3,7 +3,6 @@ import style from './index.module.scss'
 import People from '../../assets/images/business-people.svg'
 import { ReactSVG } from 'react-svg'
 import User from '../../shared/components/User'
-import PropTypes from 'prop-types'
 
 const Header = ({ users }) => {
   return (
@@ -22,15 +21,6 @@ const Header = ({ users }) => {
       </div>
     </div>
   )
-}
-
-Header.propTypes = {
-  users: PropTypes.arrayOf(
-    PropTypes.exact({
-      name: PropTypes.string.isRequired,
-      score: PropTypes.number.isRequired,
-    }).isRequired
-  ).isRequired,
 }
 
 export default Header

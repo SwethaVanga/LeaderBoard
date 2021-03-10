@@ -13,5 +13,4 @@ const User = ({ name, score }) => {
     </div>
   )
 }
-
 export default User

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render correctly row component 1`] = `
+<div
+  className="form"
+>
+  <div
+    className="form__title"
+  >
+    Add user score
+  </div>
+  <div
+    className="form__inner"
+  />
+</div>
+`;
