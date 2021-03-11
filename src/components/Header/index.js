@@ -3,15 +3,18 @@ import style from './index.module.scss'
 import People from '../../assets/images/business-people.svg'
 import { ReactSVG } from 'react-svg'
 import User from '../../shared/components/User'
+import { checkPlayers } from '../../utils/helpers'
 
 const Header = ({ users }) => {
+  const sortedUsers = checkPlayers(users)
+  const slicedUsers = sortedUsers.slice(0,4)
   return (
     <div className={style.header}>
       <div className={style.header__rating}>
         <span className={style.header_title}>All time Highest Scorers</span>
         <ul className={style.header__list}>
-          {!!users.length &&
-            users.map((user, index) => {
+          {!!slicedUsers.length &&
+            slicedUsers.map((user, index) => {
               return <User name={user.name} score={user.score} key={index} />
             })}
         </ul>
@@ -22,5 +25,6 @@ const Header = ({ users }) => {
     </div>
   )
 }
+
 
 export default Header

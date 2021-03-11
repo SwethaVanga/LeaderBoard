@@ -40,7 +40,7 @@ export const getAllPlayers = () => async (dispatch) => {
  *
  * part 3
  */
-export const createPlayer = (player) => async (dispatch) => {
+export const createPlayer =  (player) => async (dispatch) => {
   const { name, score } = player
   const params = { username: name, score }
   try {

@@ -23,7 +23,7 @@ const Main = ({ players, getAllPlayers }) => {
           Cube<span>19</span> Leaderboard
         </div>
         {firstView && !!firstView.length && (
-          <Header users={firstView.slice(0, 4)} />
+          <Header users={firstView} />
         )}
         {firstView && !!firstView.length && <Table players={firstView} />}
       </div>

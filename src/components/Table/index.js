@@ -27,6 +27,7 @@ const Table = ({
   const [editPlayer, setEditPlayer] = useState(null)
 
   return (
+		
     <div className={style.table}>
       <div className={style.table__header}>
         <span className={style.table__title}>
